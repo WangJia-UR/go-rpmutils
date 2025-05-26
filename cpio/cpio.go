@@ -31,7 +31,7 @@ var ErrStrippedHeader = errors.New("invalid cpio header: rpm-style stripped cpio
 // CpioEntry points to a single file within a cpio stream
 type CpioEntry struct {
 	Header  *Cpio_newc_header
-	payload *file_stream
+	Payload *file_stream
 }
 
 // CpioStream reads file metadata and contents from a cpio archive
